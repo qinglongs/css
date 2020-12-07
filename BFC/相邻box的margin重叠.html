@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            margin-bottom: 20px;
+            margin-top: 30px;
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+
+        .bfc {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>如果这些div不是bfc那么他们的margin会重叠，取margin最大的那一个</h1>
+    <div class="box"></div>
+    <div class="box bfc"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

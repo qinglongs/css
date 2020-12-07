@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            background-color: yellow;
+            /* 解决与父容器margin重叠问题 */
+            overflow: auto;
+        }
+
+        .children {
+
+            height: 300px;
+            margin-top: 20px;
+            background-color: green;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>BFC 块级格式化上下文，是一个封闭的盒子，不管内部怎么样布局，也不会影响到外部</h1>
+
+    <div class="box">
+        <div class="children">
+            例子：子容器与父容器的margin重叠问题
+        </div>
+    </div>
+</body>
+
+</html>
